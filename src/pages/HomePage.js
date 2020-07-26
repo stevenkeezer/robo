@@ -1,11 +1,11 @@
 import React from "react";
 
-import "../styles/tailwind.css";
+import "../styles/tailwind_output.css";
 
 const HomePage = () => {
   return (
     <>
-      <div>Home Page</div>
+      <div className="text-4xl text-red-900 px-4">Home Page</div>
     </>
   );
 };
