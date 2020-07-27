@@ -278,19 +278,4 @@
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.text-red-900 {
-  --text-opacity: 1;
-  color: #742a2a;
-  color: rgba(116, 42, 42, var(--text-opacity));
-}
-
 /* put custom css here */
