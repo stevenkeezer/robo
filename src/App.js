@@ -1,24 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import "../styles/tailwind_output.css";
+import "./styles/tailwind_output.css";
+
+const Test = () => <div>TESTING</div>;
+const Home = () => <div>HOME</div>;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route path="/test" component={Test} />
+      </div>
+    </Router>
   );
 }
 
