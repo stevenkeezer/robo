@@ -4,11 +4,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### 'npm run develop'
+```
+npm run develop
+```
 
-Runs the app in development mode while watching the tailwind_custom_entry.css file.
+- Runs the app in development mode while watching the tailwind_custom_entry.css file.
 
-### NOTE: Here's what some of the packages do:
+<br />
+
+---
+
+<br />
+
+### To use this repo with Firebase auth:
+
+- checkout the branch: [**_`with_firebase_auth`_**](https://github.com/stevenjchang/template-react-tailwind-purgecss-watch/tree/with_firebase_auth)
+
+<br />
+
+---
+
+<br />
+
+## NOTES:
+
+### Here's what some of the packages do:
 
 - `purgecss` - by default, tailwindcss imports all classes. purgecss removes all unused classes, significantly reducing compiled file size.
 - `cssnano` - css minifier + remove css comments
