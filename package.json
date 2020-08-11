@@ -22,12 +22,12 @@
   },
   "scripts": {
     "start": "npm run build:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
     "develop": "npm-run-all --parallel watch:css start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "NODE_ENV=production npm run build:css && react-scripts build",
     "build:css": "postcss src/styles/tailwind_custom_entry.css -o src/styles/tailwind_output.css",
-    "watch:css": "postcss src/styles/tailwind_custom_entry.css -o src/styles/tailwind_output.css --watch"
+    "watch:css": "postcss src/styles/tailwind_custom_entry.css -o src/styles/tailwind_output.css --watch",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

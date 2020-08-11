@@ -4,7 +4,7 @@ const cssnano = require("cssnano");
 
 module.exports = {
   plugins: [
-    tailwindcss("./tailwind.js"),
+    tailwindcss("./tailwind.config.js"),
     process.env.NODE_ENV === "production"
       ? purgecss({
           content: ["./src/*.js", "./src/**/*.js", "./src/**/**/*.js"],

@@ -10,6 +10,16 @@ npm run develop
 
 - Runs the app in development mode while watching the tailwind_custom_entry.css file.
 
+```
+npm run build
+```
+
+- Builds files into `build` folder, in production mode
+  - production mode means:
+    - purgecss - unused tailwindcss css will be removed
+    - autoprefixer - vender prefixes added
+    - cssnano - css will be minimized
+
 <br />
 
 ---
