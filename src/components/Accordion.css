@@ -1,0 +1,11 @@
+.content {
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+    overflow: hidden;
+    max-height: 0;
+}
+
+.content.show {
+    transition:  all 0.5s cubic-bezier(1,0,1,0); ; 
+    height: auto;
+    max-height: 9999px;
+}
